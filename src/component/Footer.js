@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./FooterStyle.css";
 import {FaHome, FaPhone, FaMailBulk, FaGithub, FaLinkedin} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+    const [hover, setHover] = useState(false);
+    const [hover2, setHover2] = useState(false);
+    const toggleHover = () => setHover(!hover);
+    const toggleHover2 = () => setHover2(!hover2);
+
     return (
         <div className='footer'>
             <div className='footer-container'>
@@ -31,17 +38,23 @@ const Footer = () => {
                 </div>
                 <div className='right'>
                         <div className='social'>
-                            <div className='github'>
+                            <div className={hover ?'highlight github' :'github'}
+                            onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                                 <h4>
-                                <FaGithub size={30} style={{color:"#000", marginRight:"2rem"}} />
-                                https://github.com/andrewdarmawant
+                                <Link to="https://github.com/andrewdarmawant">
+                                    <FaGithub size={30} style={{color:"#000", marginRight:"2rem"}} /> 
+                                    Browse my Github
+                                </Link>
                                 </h4>
                             </div>
 
-                            <div className='linkedin'>
+                            <div className={hover2 ?'highlight linkedin' :'linkedin'}
+                            onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
                                 <h4>
+                                <Link to="https://linkedin.com/in/andrewdarmawant">
                                     <FaLinkedin size={30} style={{color:"#000", marginRight:"2rem"}} />
-                                    https://linkedin.com/in/andrewdarmawant
+                                    Connect With Me
+                                    </Link>
                                 </h4>
                             </div>
                         </div>

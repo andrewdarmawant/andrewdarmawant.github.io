@@ -69,6 +69,13 @@
     color:white;
 }
 
+.highlight {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    margin: auto;
+}
+
 @media screen and (max-width: 640px) {
     .footer-container{
         grid-template-columns: 1fr;
