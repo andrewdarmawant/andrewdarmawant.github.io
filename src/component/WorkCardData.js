@@ -29,3 +29,5 @@ const ProjectCardData = [
         source: "https://github.com/andrewdarmawant/tic_tac_toe_ai"
     }
 ]
+
+export default ProjectCardData;

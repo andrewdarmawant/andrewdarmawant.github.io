@@ -1,10 +1,8 @@
 import React from 'react';
 import "./WorkCardStyle.css";
 
-import im1 from "../assets/brainERRp.jpg";
-import im2 from "../assets/campus_map.png";
-import im3 from "../assets/money_tracker.png";
-import im4 from "../assets/tictactoe.jpg";
+import WorkCard from './WorkCard';
+import WorkCardData from './WorkCardData';
 import { NavLink } from 'react-router-dom';
 
 const Work = () => {
@@ -12,7 +10,17 @@ const Work = () => {
         <div className='work-container'>
             <h1 className='pro-heading'>Projects</h1>
             <div className='pro-container'>
-                
+                {WorkCardData.map((val, ind) => {
+                    return(
+                        <WorkCard 
+                        key={ind}
+                        imgsrc={val.imgsrc}
+                        title={val.title}
+                        text={val.text}
+                        source={val.source}
+                        />
+                    )
+                })}
             </div>
         </div>
     )

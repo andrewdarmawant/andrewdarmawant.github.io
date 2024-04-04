@@ -1,6 +1,7 @@
 .pro-heading{
     text-align: center;
     padding: 4rem 0 2rem 0;
+    color: #212121;
 }
 
 .pro-container{
@@ -30,6 +31,7 @@
     padding-bottom: 1rem;
     font-size: 1.1rem;
     text-align: justify;
+    color: #ddd;
 }
 
 .pro-btns{

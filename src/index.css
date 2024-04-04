@@ -41,7 +41,13 @@ ul{
 }
 
 .btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(200, 20, 15, 0.2);
   color: #fff;
   transition: 0.3s;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
