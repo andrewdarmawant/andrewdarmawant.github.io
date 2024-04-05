@@ -38,6 +38,10 @@
     color: white;
 }
 
+.shadow-light {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+}
+
 @media screen and (max-width: 640px) {
     .hero-img h1{
         font-size: 2rem;

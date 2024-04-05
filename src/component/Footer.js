@@ -11,7 +11,7 @@ const Footer = () => {
     const toggleHover2 = () => setHover2(!hover2);
 
     return (
-        <div className='footer'>
+        <div className='footer shadow-light'>
             <div className='footer-container'>
                 <div className='left'>
                     <h1>Let's get in touch</h1>

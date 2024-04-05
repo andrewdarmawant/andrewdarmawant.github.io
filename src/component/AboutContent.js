@@ -45,7 +45,7 @@ const Project = () => {
                         <img src={rubiks} className='img' alt="cube" />
                     </div> */}
                 <div className='img-container'>
-                    <div className='photoCard'>
+                    <div className='photoCard shadow'>
                         <img src={photo} alt='another image of the author' loading='lazy'/>
                         <div className={color}>
                             <Link className="github" to="https://github.com/andrewdarmawant" onMouseEnter={toggleGit} onMouseLeave={toggleGit}><FaGithub size={30} style={{color:"#000"}} /> </Link>
