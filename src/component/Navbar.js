@@ -19,7 +19,7 @@ const Navbar = () => {
     window.addEventListener("scroll", changeColor);
     
     return (
-        <div className={color ? "header header-bg": 'header'}>
+        <div className={color ? "header header-bg shadow": 'header'}>
             <Link to="/"> 
                 <h1>ADT</h1>
             </Link>
@@ -38,10 +38,15 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className='hamburger' onClick={handleClick}> 
-                {click ? 
+                {/* {click ? 
                 (<FaTimes size={20} style={{color:"#767676"}}/>):
                 (<FaBars size={20} style={{color:"#767676"}}/>)
-                }
+                } */}
+                <div id="nav-icon" className={click ? 'open' : ''} >
+                    <span></span>
+                    <span>&nbsp;</span>
+                    <span>&nbsp;</span>
+                </div>
             </div>
         </div>
     )

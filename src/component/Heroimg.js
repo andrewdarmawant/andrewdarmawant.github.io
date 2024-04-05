@@ -7,12 +7,12 @@ const HeroImg = () => {
     return (
         <div className="hero">
             <div className="mask">
-                <img className="intro-img" src={face} alt="Andrew, an Indonesian man with black hair in white shirt smiling."/>
+                <img className="intro-img shadow" src={face} alt="Andrew, an Indonesian man with black hair in white shirt smiling."/>
                 <div className="content">
                     <h1>Andrew Tjahjadi</h1>
-                    <p>HCI Researcher + Software Engineer</p>
+                    <p>Aspiring Software Engineer</p>
                     <div>
-                        <Link to="/project" className="btn">Projects</Link>
+                        <Link to="/project" className="btn shadow-light">Projects</Link>
                         <Link to="/contact" className="btn btn-light">contact</Link>
                     </div>
                 </div>

@@ -38,29 +38,27 @@ const Footer = () => {
                 </div>
                 <div className='right'>
                         <div className='social'>
-                            <div className={hover ?'highlight github' :'github'}
+                            <div className={hover ?'highlight' :''}
                             onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                                 <h4>
                                 <Link to="https://github.com/andrewdarmawant">
-                                    <FaGithub size={30} style={{color:"#000", marginRight:"2rem"}} /> 
-                                    Browse my Github
+                                    <p><FaGithub size={30} style={{color:"#000", margin:"0.5rem 2rem 0 0"}} /> Browse my Github</p>
                                 </Link>
                                 </h4>
                             </div>
 
-                            <div className={hover2 ?'highlight linkedin' :'linkedin'}
+                            <div className={hover2 ?'highlight' :''}
                             onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
                                 <h4>
                                 <Link to="https://linkedin.com/in/andrewdarmawant">
-                                    <FaLinkedin size={30} style={{color:"#000", marginRight:"2rem"}} />
-                                    Connect With Me
-                                    </Link>
+                                    <p><FaLinkedin size={30} style={{color:"#000", margin:"0.5rem 2rem 0 0"}} textAnchor='Connect With Me'/> Connect With Me</p>
+                                </Link>
                                 </h4>
                             </div>
                         </div>
                 </div>
             </div>
-            <p class="copyright">Copyright &copy; {(new Date().getFullYear())} </p>
+            <p class="copyright">Copyright &copy; {(new Date().getFullYear())} - Andrew Darmawan Tjahjadi </p>
         </div>
     )
 };
