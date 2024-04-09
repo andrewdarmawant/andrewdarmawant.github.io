@@ -50,7 +50,7 @@ const Footer = () => {
                             <div className={hover2 ?'highlight' :''}
                             onMouseEnter={toggleHover2} onMouseLeave={toggleHover2}>
                                 <h4>
-                                <Link to="https://linkedin.com/in/andrewdarmawant">
+                                <Link to="https://www.linkedin.com/in/andrewtjahjadi/">
                                     <p><FaLinkedin size={30} style={{color:"#000", margin:"0.5rem 2rem 0 0"}} textAnchor='Connect With Me'/> Connect With Me</p>
                                 </Link>
                                 </h4>
